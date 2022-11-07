@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Votação</title>
+        <meta charset="UTF-8">
+        <script src="codigo.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p align="center"><b>SENADO BRASILEIRO</b></p>
+
+        <div class="container">
+            <div class="branco">
+                <div class="cinzaClaro">
+                    <p>VOTAÇÃO</p>
+                    <form action="inserirVoto">
+                        <label>Sessão</label>
+                        <input type="text" name="sessao" /><br><br>
+                        <label>Politico</label>
+                        <input type="text" name="politico" /><br><br>
+                        <label>Resposta</label>
+                        <input type="checkbox" name="resposta" value="s">SIM/NÃO<br><br>
+                        <label>Estado</label>
+                        <select name="Estado">
+                            <option value="sp">SP</option>
+                            <option value="mg" selected>MG</option>
+                            <option value="pr">PR</option>
+                          </select>
+                          <br><br>
+                          <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <a href="resultado.html">Resultado</a>
+        </div> 
+       
+    </body>
+</html>

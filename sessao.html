@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sessão</title>
+</head>
+<body>
+<h1>Formulario para cadastrar a Sessão</h1>
+    <form action="/inserirSessao" method="POST">
+        <label>Nome</label>
+        <input type="text" name="nome" />
+        <label>Descrição</label>
+        <input type="text" name="descricao" />
+        
+        <div>
+            <input type="radio" name="tipo" value="fisico" /> Fisico
+            <input type="radio" name="tipo" value="justificativa"/> Justificativa
+        </div>
+        <div>
+            <input type="checkbox" name="opcao1" id="" /> Opção1
+            <input type="checkbox" name="opcao2" id="" /> Opção2
+        </div>
+        <select name="sessões">
+            <option value="112">112</option>
+            <option value="113">113</option>
+            <option value="115">115</option>
+            <option value="136">136</option>
+     </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boletim da Urna</title>
+        <meta charset="UTF-8">
+        <script src="codigo.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button class="verde" onclick="resultado()">Resultado</button>
+        <p id="resultado"></p>
+        <a href="index.html">Voltar</a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+        <script>
+            axios.get('http://localhost:5000/api/v1/eleicao')
+              .then(response => resultado(response.data))
+              .catch(error => console.log(error))
+            const resultado = ( Voto ) => {
+              const resultado = document.getElementById('votos')
+              Voto.map(resultado => {
+                const resultado = document.createElement('li')
+                resultado.innerHTML = `Nome: ${voto.id}`
+                resultado.appendChild(resultado)
+              })
+            }
+          </script>
+    </body>
+</html>
